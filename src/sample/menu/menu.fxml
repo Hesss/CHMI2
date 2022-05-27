@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menu.MenuController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="2.0" layoutY="3.0" orientation="VERTICAL" prefHeight="790.0" prefWidth="1294.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="11.0" layoutY="15.0" text="Резервуары">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <GridPane gridLinesVisible="true" layoutX="25.0" layoutY="65.0" prefHeight="317.0" prefWidth="1176.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="232.0" text="Резервуары" textAlignment="CENTER">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="15.0" prefHeight="32.0" prefWidth="232.0" text="Состояние" textAlignment="CENTER" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="245.0" layoutY="15.0" prefHeight="32.0" prefWidth="232.0" text="Закачка" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="480.0" layoutY="15.0" prefHeight="32.0" prefWidth="232.0" text="Откачка" textAlignment="CENTER" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="715.0" layoutY="15.0" prefHeight="32.0" prefWidth="232.0" text="Допустимый уровень" textAlignment="CENTER" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="15.0" prefHeight="32.0" prefWidth="232.0" text="1" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="57.0" prefHeight="32.0" prefWidth="232.0" text="2" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="100.0" prefHeight="32.0" prefWidth="232.0" text="3" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="142.0" prefHeight="32.0" prefWidth="232.0" text="4" textAlignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="184.0" prefHeight="32.0" prefWidth="232.0" text="5" textAlignment="CENTER" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="pumpoutOne" alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="58.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpoutOne" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <TextField fx:id="MinOne" layoutX="1012.0" layoutY="126.0" prefHeight="28.0" prefWidth="47.0" AnchorPane.bottomAnchor="237.0" AnchorPane.leftAnchor="1012.0" AnchorPane.topAnchor="126.0" />
+                  <TextField fx:id="MaxOne" layoutX="1107.0" layoutY="126.0" prefHeight="28.0" prefWidth="47.0" />
+                  <Button id="setMinOne" layoutX="1059.0" layoutY="126.0" mnemonicParsing="false" onAction="#setMinOne" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="1018.0" layoutY="104.0" prefHeight="23.0" prefWidth="35.0" text="Min">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1114.0" layoutY="104.0" prefHeight="24.0" prefWidth="35.0" text="Max">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button id="setMaxOne" layoutX="1153.0" layoutY="126.0" mnemonicParsing="false" onAction="#setMaxOne" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="MinTwo" layoutX="1012.0" layoutY="183.0" prefHeight="28.0" prefWidth="47.0" />
+                  <TextField fx:id="MaxTwo" layoutX="1107.0" layoutY="183.0" prefHeight="28.0" prefWidth="47.0" />
+                  <Button id="setMinTwo" layoutX="1059.0" layoutY="183.0" mnemonicParsing="false" onAction="#setMinTwo" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="1018.0" layoutY="161.0" prefHeight="23.0" prefWidth="35.0" text="Min">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1114.0" layoutY="161.0" prefHeight="24.0" prefWidth="35.0" text="Max">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button id="setMaxTwo" layoutX="1153.0" layoutY="183.0" mnemonicParsing="false" onAction="#setMaxTwo" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="MinThree" layoutX="1012.0" layoutY="240.0" prefHeight="28.0" prefWidth="47.0" />
+                  <TextField fx:id="MaxThree" layoutX="1107.0" layoutY="240.0" prefHeight="28.0" prefWidth="47.0" />
+                  <Button id="setMinThree" layoutX="1059.0" layoutY="240.0" mnemonicParsing="false" onAction="#setMinThree" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="1018.0" layoutY="218.0" prefHeight="23.0" prefWidth="35.0" text="Min">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1114.0" layoutY="218.0" prefHeight="24.0" prefWidth="35.0" text="Max">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button id="setMaxThree" layoutX="1153.0" layoutY="240.0" mnemonicParsing="false" onAction="#setMaxThree" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="MinFour" layoutX="1012.0" layoutY="298.0" prefHeight="28.0" prefWidth="47.0" />
+                  <TextField fx:id="MaxFour" layoutX="1107.0" layoutY="298.0" prefHeight="28.0" prefWidth="47.0" />
+                  <Button id="setMinFour" layoutX="1059.0" layoutY="298.0" mnemonicParsing="false" onAction="#setMinFour" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="1018.0" layoutY="276.0" prefHeight="23.0" prefWidth="35.0" text="Min">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1114.0" layoutY="276.0" prefHeight="24.0" prefWidth="35.0" text="Max">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button id="setMaxFour" layoutX="1153.0" layoutY="298.0" mnemonicParsing="false" onAction="#setMaxFour" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="MinFive" layoutX="1012.0" layoutY="354.0" prefHeight="28.0" prefWidth="47.0" />
+                  <TextField fx:id="MaxFive" layoutX="1107.0" layoutY="354.0" prefHeight="28.0" prefWidth="47.0" />
+                  <Button id="setMinFive" layoutX="1059.0" layoutY="354.0" mnemonicParsing="false" onAction="#setMinFive" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="1018.0" layoutY="332.0" prefHeight="23.0" prefWidth="35.0" text="Min">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1114.0" layoutY="332.0" prefHeight="24.0" prefWidth="35.0" text="Max">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button id="setMaxFive" layoutX="1153.0" layoutY="354.0" mnemonicParsing="false" onAction="#setMaxFive" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="activeTwo" alignment="CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="173.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#activeTwo" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="activeOne" alignment="CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="117.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#activeOne" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="activeThree" alignment="CENTER" contentDisplay="CENTER" layoutX="272.0" layoutY="230.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#activeThree" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="activeFour" alignment="CENTER" contentDisplay="CENTER" layoutX="272.0" layoutY="287.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#activeFour" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="activeFive" alignment="CENTER" contentDisplay="CENTER" layoutX="272.0" layoutY="344.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#activeFive" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpinTwo" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="174.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpinTwo" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpinThree" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="229.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpinThree" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpinFour" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="286.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpinFour" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpinFive" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="343.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpinFive" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpoutTwo" alignment="CENTER" contentDisplay="CENTER" layoutX="740.0" layoutY="173.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpoutTwo" prefHeight="31.0" prefWidth="84.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpinOne" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="117.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpinOne" prefHeight="31.0" prefWidth="83.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpoutThree" alignment="CENTER" contentDisplay="CENTER" layoutX="740.0" layoutY="230.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpoutThree" prefHeight="31.0" prefWidth="84.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpoutFour" alignment="CENTER" contentDisplay="CENTER" layoutX="740.0" layoutY="287.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpoutFour" prefHeight="31.0" prefWidth="84.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pumpoutFive" alignment="CENTER" contentDisplay="CENTER" layoutX="740.0" layoutY="343.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#pumpoutFive" prefHeight="31.0" prefWidth="84.0" text="Выкл" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedOutOne" layoutX="847.0" layoutY="118.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedOutOne" layoutX="881.0" layoutY="118.0" mnemonicParsing="false" onAction="#setSpeedOutOne" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedOutTwo" layoutX="847.0" layoutY="175.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedOutTwo" layoutX="881.0" layoutY="175.0" mnemonicParsing="false" onAction="#setSpeedOutTwo" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedOutThree" layoutX="847.0" layoutY="232.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedOutThree" layoutX="881.0" layoutY="232.0" mnemonicParsing="false" onAction="#setSpeedOutThree" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedOutFour" layoutX="847.0" layoutY="288.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedOutFour" layoutX="881.0" layoutY="288.0" mnemonicParsing="false" onAction="#setSpeedOutFour" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedOutFive" layoutX="847.0" layoutY="345.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedOutFive" layoutX="881.0" layoutY="345.0" mnemonicParsing="false" onAction="#setSpeedOutFive" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedInFive" layoutX="610.0" layoutY="345.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedInFive" layoutX="644.0" layoutY="345.0" mnemonicParsing="false" onAction="#setSpeedInFive" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedInFour" layoutX="610.0" layoutY="287.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedInFour" layoutX="644.0" layoutY="287.0" mnemonicParsing="false" onAction="#setSpeedInFour" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedInThree" layoutX="610.0" layoutY="231.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedInThree" layoutX="644.0" layoutY="231.0" mnemonicParsing="false" onAction="#setSpeedInThree" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedInTwo" layoutX="610.0" layoutY="175.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedInTwo" layoutX="644.0" layoutY="175.0" mnemonicParsing="false" onAction="#setSpeedInTwo" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="SpeedInOne" layoutX="610.0" layoutY="120.0" prefHeight="28.0" prefWidth="34.0" />
+                  <Button id="setSpeedInOne" layoutX="644.0" layoutY="120.0" mnemonicParsing="false" onAction="#setSpeedInOne" prefHeight="28.0" prefWidth="35.0" text="Ок">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="error" layoutX="194.0" layoutY="22.0" prefHeight="22.0" prefWidth="686.0" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minInfoOne" layoutX="1046.0" layoutY="100.0" prefHeight="30.0" prefWidth="35.0" text="0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minInfoTwo" layoutX="1046.0" layoutY="157.0" prefHeight="30.0" prefWidth="35.0" text="0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minInfoThree" layoutX="1046.0" layoutY="214.0" prefHeight="30.0" prefWidth="35.0" text="0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minInfoFour" layoutX="1046.0" layoutY="271.0" prefHeight="30.0" prefWidth="35.0" text="0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="minInfoFive" layoutX="1046.0" layoutY="328.0" prefHeight="30.0" prefWidth="35.0" text="0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxInfoOne" layoutX="1145.0" layoutY="100.0" prefHeight="30.0" prefWidth="35.0" text="100">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxInfoTwo" layoutX="1145.0" layoutY="157.0" prefHeight="30.0" prefWidth="35.0" text="100">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxInfoThree" layoutX="1145.0" layoutY="214.0" prefHeight="30.0" prefWidth="35.0" text="100">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxInfoFour" layoutX="1145.0" layoutY="271.0" prefHeight="30.0" prefWidth="35.0" text="100">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maxInfoFive" layoutX="1145.0" layoutY="328.0" prefHeight="30.0" prefWidth="35.0" text="100">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="levelOne" layoutX="400.0" layoutY="109.0" prefHeight="43.0" prefWidth="83.0" text="0%">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="levelTwo" layoutX="400.0" layoutY="167.0" prefHeight="43.0" prefWidth="83.0" text="0%">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="levelThree" layoutX="400.0" layoutY="225.0" prefHeight="43.0" prefWidth="83.0" text="0%">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="levelFour" layoutX="400.0" layoutY="281.0" prefHeight="43.0" prefWidth="83.0" text="0%">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="levelFive" layoutX="400.0" layoutY="338.0" prefHeight="43.0" prefWidth="83.0" text="0%">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="779.0" prefWidth="1294.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="6.0" prefHeight="36.0" prefWidth="114.0" text="Журнал">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="512.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="0.0" />
+                  <TextArea fx:id="journalArea" layoutX="26.0" layoutY="56.0" prefHeight="294.0" prefWidth="1055.0" />
+                  <Button fx:id="delete" layoutX="1112.0" layoutY="64.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="112.0" text="      Удалить" textFill="RED">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView disable="true" fitHeight="29.0" fitWidth="63.0" layoutX="1115.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="history" onAction="#history" layoutX="1112.0" layoutY="118.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="115.0" text="История">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
